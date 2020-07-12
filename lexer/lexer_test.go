@@ -6,7 +6,7 @@ import (
 )
 
 func TestNextToken(t *testing.T) {
-	input := `=+(){},;let`
+	input := `=+(){},; let`
 	tests := []struct {
 		expectedType    token.TokenType
 		expectedLiteral string
